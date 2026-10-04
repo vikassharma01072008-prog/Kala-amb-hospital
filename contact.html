@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact & Appointment — Kala Amb Multispeciality Hospital</title>
-<meta name="description" content="Book an appointment or contact Kala Amb Multispeciality Hospital. 24x7 emergency: 8607599543. Vill. Munal Johron, Tirlokpur Road, Kala Amb, HP.">
+<meta name="description" content="Book an appointment or contact Kala Amb Multispeciality Hospital. 24x7 emergency: 8607599543.">
 <meta name="theme-color" content="#0a2a5e">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a2a5e'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%2325a05e' font-family='Arial' font-weight='bold'>+</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,12 +15,12 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',-apple-system,Arial,sans-serif;background:#f5f8fb;color:#1a1a1a;line-height:1.6;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
-:root{--navy:#0a2a5e;--navy-2:#0d3a7a;--navy-3:#1a4a8a;--green:#25a05e;--green-2:#1a8050;--green-light:#e6f5ec;--blue-light:#e6eefc;--white:#ffffff;--off:#f5f8fb;--muted:#687382;--line:#e2e8f0;--red:#e11d48;--gold:#d4a017}
+:root{--navy:#0a2a5e;--navy-2:#0d3a7a;--navy-3:#1a4a8a;--green:#25a05e;--green-2:#1a8050;--green-light:#e6f5ec;--white:#fff;--off:#f5f8fb;--muted:#687382;--line:#e2e8f0;--red:#e11d48}
 
 .emergency-bar{background:var(--red);color:white;padding:10px 0;text-align:center;font-size:14px;font-weight:600;position:relative;overflow:hidden}
 .emergency-bar::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);animation:emergencyShine 3s ease-in-out infinite}
 @keyframes emergencyShine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
-.emergency-bar a{color:white;border-bottom:2px solid rgba(255,255,255,.5);margin-left:6px;display:inline-flex;align-items:center;gap:6px}
+.emergency-bar a{color:white;border-bottom:2px solid rgba(255,255,255,.5);margin-left:6px}
 .emergency-bar .pulse-dot{display:inline-block;width:8px;height:8px;background:white;border-radius:50%;animation:emergencyPulse 1.4s ease-in-out infinite;margin-right:8px;vertical-align:middle}
 @keyframes emergencyPulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.7)}50%{opacity:.6;transform:scale(1.3);box-shadow:0 0 0 8px rgba(255,255,255,0)}}
 
@@ -39,24 +39,22 @@ a{text-decoration:none;color:inherit}
 .nav-cta{background:var(--green);color:white !important;padding:11px 22px;border-radius:99px;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px;transition:all .25s;box-shadow:0 4px 14px rgba(37,160,94,.3)}
 .nav-cta:hover{background:var(--green-2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,160,94,.4)}
 .hamburger{display:none;background:transparent;border:0;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
-.hamburger span{width:26px;height:2px;background:var(--navy);border-radius:2px;transition:.3s}
+.hamburger span{width:26px;height:2px;background:var(--navy);border-radius:2px}
 
 .page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,var(--navy-3) 100%);color:white;padding:70px 0 80px;position:relative;overflow:hidden}
 .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 50%,rgba(37,160,94,.25),transparent 55%);pointer-events:none}
-.page-hero::after{content:'';position:absolute;top:0;left:0;right:0;height:60px;background:linear-gradient(180deg,rgba(0,0,0,.15),transparent);pointer-events:none}
 .page-hero-in{max-width:1280px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
 .page-hero .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(37,160,94,.2);border:1px solid rgba(37,160,94,.5);color:#a8f0c8;padding:8px 16px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
 .page-hero .eyebrow::before{content:'';width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green);animation:pulseGreen 2s infinite}
 @keyframes pulseGreen{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
 .page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(34px,5vw,54px);font-weight:800;line-height:1.05;letter-spacing:-1.5px;margin-bottom:14px}
 .page-hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:500;color:#a8f0c8;margin-top:8px;letter-spacing:0}
-.page-hero p{font-size:17px;color:rgba(255,255,255,.85);max-width:640px;line-height:1.6}
+.page-hero p{font-size:17px;color:rgba(255,255,255,.85);max-width:640px}
 
 .breadcrumb{background:white;border-bottom:1px solid var(--line);padding:14px 0;font-size:13px;color:var(--muted)}
 .breadcrumb-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.breadcrumb a{color:var(--navy);font-weight:600;transition:color .2s}
-.breadcrumb a:hover{color:var(--green)}
-.breadcrumb .sep{color:var(--muted);font-weight:400}
+.breadcrumb a{color:var(--navy);font-weight:600}
+.breadcrumb .sep{color:var(--muted)}
 .breadcrumb .current{color:var(--muted);font-weight:500}
 
 section{padding:80px 0;position:relative}
@@ -65,9 +63,7 @@ section{padding:80px 0;position:relative}
 .sec-title{font-family:'Poppins',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-1.2px;line-height:1.1;color:var(--navy);margin-bottom:14px}
 .sec-sub{color:var(--muted);font-size:16px;max-width:680px;line-height:1.65;margin-bottom:50px}
 .sec-center{text-align:center}
-.sec-center .sec-sub{margin-left:auto;margin-right:auto}
-
-.contact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:50px}
+.sec-center .sec-sub{margin-left:auto;margin-right:auto}.contact-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:50px}
 .contact-card{background:white;border-radius:18px;padding:28px 22px;text-align:center;border:1px solid var(--line);transition:all .35s;position:relative;overflow:hidden}
 .contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--navy),var(--green));transform:scaleX(0);transition:.4s;transform-origin:left}
 .contact-card:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 20px 40px rgba(10,42,94,.1)}
@@ -76,8 +72,7 @@ section{padding:80px 0;position:relative}
 .contact-card:hover .ic{background:var(--green);color:white;transform:rotate(-4deg)}
 .contact-card h4{font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;color:var(--navy);margin-bottom:8px}
 .contact-card p{font-size:13.5px;color:var(--muted);line-height:1.55;margin-bottom:12px}
-.contact-card a{color:var(--green);font-weight:700;font-size:13.5px;transition:color .2s}
-.contact-card a:hover{color:var(--green-2)}
+.contact-card a{color:var(--green);font-weight:700;font-size:13.5px}
 
 .form-map-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:start}
 .form-box{background:white;border-radius:22px;padding:38px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(10,42,94,.06);position:relative;overflow:hidden}
@@ -99,19 +94,14 @@ section{padding:80px 0;position:relative}
 .btn-primary:hover{background:var(--green-2);transform:translateY(-3px);box-shadow:0 14px 34px rgba(37,160,94,.45)}
 .btn-primary:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .btn-emergency{background:var(--red);color:white;box-shadow:0 10px 26px rgba(225,29,72,.35)}
-.btn-emergency:hover{background:#c01740;transform:translateY(-3px);box-shadow:0 14px 34px rgba(225,29,72,.45)}
-.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--line)}
-.btn-outline:hover{border-color:var(--green);color:var(--green);background:var(--green-light);transform:translateY(-3px)}
+.btn-emergency:hover{background:#c01740;transform:translateY(-3px)}
 .form-note{font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.5;display:flex;gap:8px;align-items:flex-start}
 .form-note .ic{color:var(--green);flex-shrink:0}
-
 .form-success{display:none;background:var(--green-light);border:1.5px solid var(--green);border-radius:14px;padding:18px 22px;margin-bottom:20px;color:var(--green-2);font-weight:600;font-size:14px;line-height:1.5;align-items:flex-start;gap:12px}
 .form-success.show{display:flex}
 .form-success .ic{font-size:22px;flex-shrink:0}
-
-.map-box{border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(10,42,94,.12);height:100%;min-height:500px;background:var(--off);position:relative}
+.map-box{border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(10,42,94,.12);height:100%;min-height:500px;background:var(--off)}
 .map-box iframe{width:100%;height:100%;border:0;display:block;min-height:500px}
-
 .info-strip{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:white;padding:60px 0}
 .info-strip-in{max-width:1280px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.5fr 1fr;gap:40px;align-items:center}
 .info-strip h2{font-family:'Poppins',sans-serif;font-size:clamp(24px,3.5vw,36px);font-weight:800;letter-spacing:-1px;margin-bottom:12px}
@@ -130,12 +120,12 @@ section{padding:80px 0;position:relative}
 .cta-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(255,255,255,.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,255,255,.1),transparent 50%);pointer-events:none}
 .cta-banner h2{font-family:'Poppins',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-1px;margin-bottom:14px;position:relative}
 .cta-banner p{font-size:17px;opacity:.9;margin-bottom:28px;position:relative}
-.cta-banner .btn{position:relative;background:white;color:var(--green);box-shadow:0 10px 26px rgba(0,0,0,.15)}
-.cta-banner .btn:hover{background:#f0f8f3;transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.2)}
+.cta-banner .btn{position:relative;background:white;color:var(--green)}
+.cta-banner .btn:hover{background:#f0f8f3;transform:translateY(-3px)}
 
 footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
 .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:40px}
-.foot-brand{font-family:'Poppins',sans-serif;font-size:22px;color:white;font-weight:800;margin-bottom:14px;letter-spacing:-.5px}
+.foot-brand{font-family:'Poppins',sans-serif;font-size:22px;color:white;font-weight:800;margin-bottom:14px}
 .foot-brand span{color:var(--green)}
 .foot-desc{font-size:13.5px;line-height:1.7;margin-bottom:20px}
 .foot-social{display:flex;gap:12px}
@@ -177,14 +167,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
 }
 </style>
 </head>
-<body><!-- ===== EMERGENCY BAR ===== -->
+<body>
+
+<!-- EMERGENCY BAR -->
 <div class="emergency-bar">
   <span class="pulse-dot"></span>
   24x7 Emergency Service —
   <a href="tel:8607599543">📞 8607599543</a>
 </div>
 
-<!-- ===== NAVBAR ===== -->
+<!-- NAVBAR -->
 <nav class="nav">
   <div class="nav-in">
     <a href="index.html" class="brand">
@@ -213,7 +205,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
   </div>
 </nav>
 
-<!-- ===== PAGE HERO ===== -->
+<!-- PAGE HERO -->
 <section class="page-hero">
   <div class="page-hero-in">
     <span class="eyebrow">Get in Touch</span>
@@ -225,7 +217,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
   </div>
 </section>
 
-<!-- ===== BREADCRUMB ===== -->
+<!-- BREADCRUMB -->
 <div class="breadcrumb">
   <div class="breadcrumb-in">
     <a href="index.html">Home</a>
@@ -234,7 +226,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
   </div>
 </div>
 
-<!-- ===== CONTACT SECTION ===== -->
+<!-- CONTACT -->
 <section>
   <div class="container">
     <div class="sec-center reveal">
@@ -270,9 +262,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
       </div>
     </div>
 
-    <!-- FORM + MAP GRID -->
     <div class="form-map-grid">
-      <!-- APPOINTMENT FORM -->
       <div class="form-box reveal" id="appointment-form">
         <div class="form-success" id="formSuccess">
           <span class="ic">✅</span>
@@ -293,7 +283,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
               <input type="tel" id="pPhone" placeholder="10-digit mobile" pattern="[0-9]{10}" maxlength="10" required>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Department <span class="req">*</span></label>
@@ -313,39 +302,31 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
               <input type="date" id="pDate">
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group full">
               <label>Message / Symptoms</label>
               <textarea id="pMsg" placeholder="Briefly describe your concern (optional)"></textarea>
             </div>
           </div>
-
           <div class="form-actions">
-            <button type="submit" class="btn btn-primary" id="submitBtn">
-              📅 Request Appointment
-            </button>
-            <a href="tel:8607599543" class="btn btn-emergency">
-              🚨 Emergency
-            </a>
+            <button type="submit" class="btn btn-primary" id="submitBtn">📅 Request Appointment</button>
+            <a href="tel:8607599543" class="btn btn-emergency">🚨 Emergency</a>
           </div>
-
           <div class="form-note">
             <span class="ic">ℹ️</span>
-            <span>Your information is kept confidential. We'll call you back within a few hours to confirm your appointment.</span>
+            <span>Your information is kept confidential. We'll call you back within a few hours.</span>
           </div>
         </form>
       </div>
 
-      <!-- MAP -->
       <div class="map-box reveal">
-        <iframe src="https://www.google.com/maps?q=Kala+Amb+Multispeciality+Hospital+Tirlokpur+Road+Kala+Amb+Himachal+Pradesh+173030&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps?q=Kala+Amb+Multispeciality+Hospital+Tirlokpur+Road+Kala+Amb+Himachal+Pradesh+173030&output=embed" loading="lazy"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== INFO STRIP ===== -->
+<!-- INFO STRIP -->
 <section class="info-strip">
   <div class="info-strip-in">
     <div class="reveal">
@@ -355,36 +336,21 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
     </div>
     <div class="info-hours reveal">
       <h4>Opening Hours</h4>
-      <div class="hour-row">
-        <span class="day">Monday – Saturday</span>
-        <span class="time">9:00 AM – 9:00 PM</span>
-      </div>
-      <div class="hour-row">
-        <span class="day">Sunday</span>
-        <span class="time">10:00 AM – 2:00 PM</span>
-      </div>
-      <div class="hour-row emergency">
-        <span class="day">Emergency</span>
-        <span class="time">24 × 7</span>
-      </div>
-      <div class="hour-row emergency">
-        <span class="day">Ambulance</span>
-        <span class="time">24 × 7</span>
-      </div>
-      <div class="hour-row emergency">
-        <span class="day">Pharmacy</span>
-        <span class="time">24 × 7</span>
-      </div>
+      <div class="hour-row"><span class="day">Monday – Saturday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+      <div class="hour-row"><span class="day">Sunday</span><span class="time">10:00 AM – 2:00 PM</span></div>
+      <div class="hour-row emergency"><span class="day">Emergency</span><span class="time">24 × 7</span></div>
+      <div class="hour-row emergency"><span class="day">Ambulance</span><span class="time">24 × 7</span></div>
+      <div class="hour-row emergency"><span class="day">Pharmacy</span><span class="time">24 × 7</span></div>
     </div>
   </div>
-</section><!-- ===== CTA BANNER ===== -->
+</section><!-- CTA BANNER -->
 <section class="cta-banner">
   <h2>Emergency? We're Here 24x7.</h2>
   <p>For urgent medical care, call our helpline directly.</p>
   <a href="tel:8607599543" class="btn">📞 Call 8607599543</a>
 </section>
 
-<!-- ===== FOOTER ===== -->
+<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="foot-grid">
@@ -430,7 +396,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
   </div>
 </footer>
 
-<!-- ===== SCRIPTS ===== -->
 <script>
 /* Nav toggle */
 function toggleNav(){
@@ -455,20 +420,21 @@ function toggleNav(){
   targets.forEach(t => io.observe(t));
 })();
 
-/* Set minimum date to today */
+/* Set min date = today */
 (function(){
-  const dateInput = document.getElementById('pDate');
-  if (dateInput){
+  const d = document.getElementById('pDate');
+  if (d){
     const today = new Date().toISOString().split('T')[0];
-    dateInput.min = today;
+    d.min = today;
   }
 })();
 
 /* ==========================================================
-   APPOINTMENT FORM — WEB3FORMS
-   Notifications go to: kalaambmultispecialityhospital@gmail.com
+   APPOINTMENT FORM — Web3Forms + Supabase
    ========================================================== */
 const WEB3FORMS_KEY = "f3edd88f-2978-49ad-9dbb-4d5c78f6ce33";
+const SUPA_URL = "https://xvtxpllmfwgnlrffbcqz.supabase.co";
+const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2dHhwbGxtZndnbmxyZmZiY3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0Mzg2OTYsImV4cCI6MjEwNjAxNDY5Nn0.JC1Za7PdNGLngpupBovq_DqI-vHRVBOovLdEe-w1Ap0";
 
 async function submitForm(e){
   e.preventDefault();
@@ -496,15 +462,10 @@ async function submitForm(e){
   btn.textContent = "Submitting...";
 
   try {
-    // ==================================================
-    // 1. Send email via Web3Forms
-    // ==================================================
+    // 1. Send email to hospital via Web3Forms
     const emailPromise = fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
       body: JSON.stringify({
         access_key: WEB3FORMS_KEY,
         subject: "New Appointment Request — Kala Amb Hospital",
@@ -517,15 +478,13 @@ async function submitForm(e){
       })
     });
 
-    // ==================================================
-    // 2. Save to Supabase (for admin panel)
-    // ==================================================
-    const supaPromise = fetch("https://xvtxpllmfwgnlrffbcqz.supabase.co/rest/v1/hospital_appointments", {
+    // 2. Save to Supabase for admin panel
+    const supaPromise = fetch(`${SUPA_URL}/rest/v1/hospital_appointments`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "apikey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2dHhwbGxtZndnbmxyZmZiY3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0Mzg2OTYsImV4cCI6MjEwNjAxNDY5Nn0.JC1Za7PdNGLngpupBovq_DqI-vHRVBOovLdEe-w1Ap0",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2dHhwbGxtZndnbmxyZmZiY3F6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTA0Mzg2OTYsImV4cCI6MjEwNjAxNDY5Nn0.JC1Za7PdNGLngpupBovq_DqI-vHRVBOovLdEe-w1Ap0",
+        "apikey": SUPA_KEY,
+        "Authorization": "Bearer " + SUPA_KEY,
         "Prefer": "return=minimal"
       },
       body: JSON.stringify({
@@ -537,9 +496,7 @@ async function submitForm(e){
       })
     });
 
-    // Run both in parallel
     const [emailRes, supaRes] = await Promise.all([emailPromise, supaPromise]);
-
     const emailResult = await emailRes.json();
 
     if (!emailResult.success){
@@ -549,24 +506,10 @@ async function submitForm(e){
       console.error("Supabase error:", await supaRes.text());
     }
 
-    // Success — show message regardless (email is the main notification)
+    // Success — show confirmation
     form.reset();
     success.classList.add('show');
     success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    setTimeout(() => success.classList.remove('show'), 8000);
-
-  } catch (err){
-    console.error("Network error:", err);
-    alert("Connection issue. Please call 8607599543.");
-  } finally {
-    btn.disabled = false;
-    btn.textContent = "📅 Request Appointment";
-  }
-}
-    form.reset();
-    success.classList.add('show');
-    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
     setTimeout(() => success.classList.remove('show'), 8000);
 
   } catch (err){
