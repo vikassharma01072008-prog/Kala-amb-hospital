@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Our Doctors — Kala Amb Multispeciality Hospital</title>
+<meta name="description" content="Meet our expert team of doctors — General Medicine, Surgery, Gynaecology, Orthopedics, Pediatrics, Urology. Kala Amb Multispeciality Hospital, Himachal Pradesh.">
+<meta name="theme-color" content="#0a2a5e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a2a5e'/><text x='50' y='68' font-size='60' text-anchor='middle' fill='%2325a05e' font-family='Arial' font-weight='bold'>+</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,Arial,sans-serif;background:#f5f8fb;color:#1a1a1a;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+:root{--navy:#0a2a5e;--navy-2:#0d3a7a;--navy-3:#1a4a8a;--green:#25a05e;--green-2:#1a8050;--green-light:#e6f5ec;--blue-light:#e6eefc;--white:#ffffff;--off:#f5f8fb;--muted:#687382;--line:#e2e8f0;--red:#e11d48;--gold:#d4a017}
+
+/* ===== EMERGENCY BAR ===== */
+.emergency-bar{background:var(--red);color:white;padding:10px 0;text-align:center;font-size:14px;font-weight:600;position:relative;overflow:hidden}
+.emergency-bar::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent);animation:emergencyShine 3s ease-in-out infinite}
+@keyframes emergencyShine{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.emergency-bar a{color:white;border-bottom:2px solid rgba(255,255,255,.5);margin-left:6px;display:inline-flex;align-items:center;gap:6px}
+.emergency-bar .pulse-dot{display:inline-block;width:8px;height:8px;background:white;border-radius:50%;animation:emergencyPulse 1.4s ease-in-out infinite;margin-right:8px;vertical-align:middle}
+@keyframes emergencyPulse{0%,100%{opacity:1;transform:scale(1);box-shadow:0 0 0 0 rgba(255,255,255,.7)}50%{opacity:.6;transform:scale(1.3);box-shadow:0 0 0 8px rgba(255,255,255,0)}}
+
+/* ===== NAVBAR ===== */
+.nav{background:white;box-shadow:0 2px 12px rgba(10,42,94,.08);position:sticky;top:0;z-index:1000;padding:14px 0}
+.nav-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo{width:56px;height:56px;flex-shrink:0}
+.brand-logo svg{width:100%;height:100%}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-text b{font-family:'Poppins',sans-serif;font-size:19px;color:var(--navy);font-weight:800;letter-spacing:-.5px}
+.brand-text small{font-size:10px;color:var(--green);font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600;color:var(--navy)}
+.nav-links a{transition:color .2s}
+.nav-links a:hover{color:var(--green)}
+.nav-links a.active{color:var(--green)}
+.nav-cta{background:var(--green);color:white !important;padding:11px 22px;border-radius:99px;font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:8px;transition:all .25s;box-shadow:0 4px 14px rgba(37,160,94,.3)}
+.nav-cta:hover{background:var(--green-2);transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,160,94,.4)}
+.hamburger{display:none;background:transparent;border:0;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.hamburger span{width:26px;height:2px;background:var(--navy);border-radius:2px;transition:.3s}
+
+/* ===== PAGE HERO ===== */
+.page-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,var(--navy-3) 100%);color:white;padding:70px 0 80px;position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 50%,rgba(37,160,94,.25),transparent 55%);pointer-events:none}
+.page-hero::after{content:'';position:absolute;top:0;left:0;right:0;height:60px;background:linear-gradient(180deg,rgba(0,0,0,.15),transparent);pointer-events:none}
+.page-hero-in{max-width:1280px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.page-hero .eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(37,160,94,.2);border:1px solid rgba(37,160,94,.5);color:#a8f0c8;padding:8px 16px;border-radius:99px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.page-hero .eyebrow::before{content:'';width:8px;height:8px;background:var(--green);border-radius:50%;box-shadow:0 0 12px var(--green);animation:pulseGreen 2s infinite}
+@keyframes pulseGreen{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
+.page-hero h1{font-family:'Poppins',sans-serif;font-size:clamp(34px,5vw,54px);font-weight:800;line-height:1.05;letter-spacing:-1.5px;margin-bottom:14px}
+.page-hero h1 span{display:block;font-size:clamp(20px,2.5vw,28px);font-weight:500;color:#a8f0c8;margin-top:8px;letter-spacing:0}
+.page-hero p{font-size:17px;color:rgba(255,255,255,.85);max-width:640px;line-height:1.6}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{background:white;border-bottom:1px solid var(--line);padding:14px 0;font-size:13px;color:var(--muted)}
+.breadcrumb-in{max-width:1280px;margin:0 auto;padding:0 24px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.breadcrumb a{color:var(--navy);font-weight:600;transition:color .2s}
+.breadcrumb a:hover{color:var(--green)}
+.breadcrumb .sep{color:var(--muted);font-weight:400}
+.breadcrumb .current{color:var(--muted);font-weight:500}
+
+/* ===== SECTION BASE ===== */
+section{padding:80px 0;position:relative}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+.sec-eyebrow{display:inline-block;color:var(--green);font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
+.sec-title{font-family:'Poppins',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-1.2px;line-height:1.1;color:var(--navy);margin-bottom:14px}
+.sec-sub{color:var(--muted);font-size:16px;max-width:680px;line-height:1.65;margin-bottom:50px}
+.sec-center{text-align:center}
+.sec-center .sec-sub{margin-left:auto;margin-right:auto}
+
+/* ===== DOCTOR FULL CARDS ===== */
+.doc-full-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.doc-full{background:white;border-radius:22px;border:1px solid var(--line);padding:32px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:start;position:relative;overflow:hidden;transition:all .4s cubic-bezier(.2,.9,.3,1.1)}
+.doc-full::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--navy),var(--green));transform:scaleX(0);transform-origin:left;transition:.4s}
+.doc-full:hover{transform:translateY(-6px);border-color:var(--green);box-shadow:0 24px 60px rgba(10,42,94,.12)}
+.doc-full:hover::before{transform:scaleX(1)}
+.doc-full-avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--green));color:white;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:36px;font-weight:800;letter-spacing:-1px;flex-shrink:0;transition:transform .4s;position:relative}
+.doc-full:hover .doc-full-avatar{transform:scale(1.05) rotate(-3deg)}
+.doc-full-avatar::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px solid var(--green-light);opacity:.5}
+.doc-full-body h2{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--navy);letter-spacing:-.5px;margin-bottom:4px}
+.doc-full-body .qual{color:var(--green);font-size:12.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.doc-full-body .spec{display:inline-block;background:var(--green-light);color:var(--green-2);font-size:12px;font-weight:700;padding:6px 12px;border-radius:99px;margin-bottom:16px}
+.doc-full-body p{color:#4a5568;font-size:14px;line-height:1.65;margin-bottom:18px}
+.doc-full-body .dept-link{display:inline-flex;align-items:center;gap:6px;color:var(--green);font-size:13px;font-weight:700;margin-bottom:18px;transition:gap .25s}
+.doc-full-body .dept-link:hover{gap:10px}
+.doc-full-cta{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:0;border-radius:12px;padding:13px 22px;font-weight:700;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .25s;font-family:inherit;text-decoration:none;letter-spacing:.3px}
+.btn-primary{background:var(--green);color:white;box-shadow:0 8px 20px rgba(37,160,94,.3)}
+.btn-primary:hover{background:var(--green-2);transform:translateY(-3px);box-shadow:0 12px 28px rgba(37,160,94,.4)}
+.btn-outline{background:transparent;color:var(--navy);border:2px solid var(--line)}
+.btn-outline:hover{border-color:var(--green);color:var(--green);background:var(--green-light);transform:translateY(-3px)}
+
+/* ===== QUICK STATS STRIP ===== */
+.stats-strip{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats-strip-in{max-width:1280px;margin:0 auto;padding:40px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stat-item .num{font-family:'Poppins',sans-serif;font-size:38px;font-weight:800;color:var(--green);line-height:1;margin-bottom:6px;letter-spacing:-1px}
+.stat-item .lbl{font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.5px}
+
+/* ===== CTA BANNER ===== */
+.cta-banner{background:linear-gradient(135deg,var(--green),var(--green-2));color:white;padding:70px 24px;text-align:center;position:relative;overflow:hidden}
+.cta-banner::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(255,255,255,.15),transparent 50%),radial-gradient(circle at 80% 50%,rgba(255,255,255,.1),transparent 50%);pointer-events:none}
+.cta-banner h2{font-family:'Poppins',sans-serif;font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-1px;margin-bottom:14px;position:relative}
+.cta-banner p{font-size:17px;opacity:.9;margin-bottom:28px;position:relative}
+.cta-banner .btn{position:relative;background:white;color:var(--green);box-shadow:0 10px 26px rgba(0,0,0,.15)}
+.cta-banner .btn:hover{background:#f0f8f3;transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.2)}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy);color:rgba(255,255,255,.7);padding:60px 0 24px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px;margin-bottom:40px}
+.foot-brand{font-family:'Poppins',sans-serif;font-size:22px;color:white;font-weight:800;margin-bottom:14px;letter-spacing:-.5px}
+.foot-brand span{color:var(--green)}
+.foot-desc{font-size:13.5px;line-height:1.7;margin-bottom:20px}
+.foot-social{display:flex;gap:12px}
+.foot-social a{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:18px;transition:.25s}
+.foot-social a:hover{background:var(--green);transform:translateY(-3px)}
+.foot-col h5{font-size:12px;letter-spacing:2px;font-weight:800;color:white;margin-bottom:18px;text-transform:uppercase}
+.foot-col a{display:block;font-size:13.5px;padding:6px 0;transition:color .2s}
+.foot-col a:hover{color:var(--green)}
+.foot-contact p{font-size:13.5px;margin-bottom:12px;display:flex;gap:10px;align-items:flex-start;line-height:1.5}
+.foot-contact .ic{color:var(--green);flex-shrink:0}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px}
+.foot-bottom a{color:var(--green)}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.9,.3,1.1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+@media(max-width:1000px){
+  .doc-full-grid{grid-template-columns:1fr}
+  .stats-strip-in{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:700px){
+  .nav-links{display:none}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;background:white;flex-direction:column;padding:20px;gap:16px;box-shadow:0 20px 30px rgba(0,0,0,.1);border-top:1px solid var(--line)}
+  .hamburger{display:flex}
+  .brand-text b{font-size:16px}
+  .brand-text small{font-size:8px}
+  .brand-logo{width:46px;height:46px}
+  .doc-full{grid-template-columns:1fr;gap:20px;padding:26px}
+  .doc-full-avatar{width:80px;height:80px;font-size:28px}
+  .foot-grid{grid-template-columns:1fr;gap:28px}
+  .emergency-bar{font-size:12px;padding:8px 12px}
+  section{padding:60px 0}
+  .page-hero{padding:50px 0 60px}
+  .stat-item .num{font-size:30px}
+}
+</style>
+</head><!-- ===== EMERGENCY BAR ===== -->
+<div class="emergency-bar">
+  <span class="pulse-dot"></span>
+  24x7 Emergency Service —
+  <a href="tel:8607599543">📞 8607599543</a>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="nav">
+  <div class="nav-in">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="#0a2a5e" stroke="#25a05e" stroke-width="4"/>
+          <circle cx="50" cy="30" r="9" fill="#25a05e"/>
+          <path d="M50 40 Q30 42 28 68 L72 68 Q70 42 50 40 Z" fill="#25a05e"/>
+          <path d="M50 62 L50 78 M40 70 L50 78 L60 70" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <b>KALA AMB</b>
+        <small>Multispeciality Hospital</small>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="doctors.html" class="active">Doctors</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:8607599543" class="nav-cta">📞 Emergency</a>
+    </div>
+    <button class="hamburger" id="hamburger" onclick="toggleNav()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="page-hero-in">
+    <span class="eyebrow">Meet Our Team</span>
+    <h1>
+      Expert Doctors, Compassionate Care
+      <span>अनुभवी डॉक्टर — आपकी सेवा में</span>
+    </h1>
+    <p>Our team of experienced specialists is dedicated to providing the highest standard of medical care to every patient.</p>
+  </div>
+</section>
+
+<!-- ===== BREADCRUMB ===== -->
+<div class="breadcrumb">
+  <div class="breadcrumb-in">
+    <a href="index.html">Home</a>
+    <span class="sep">›</span>
+    <span class="current">Doctors</span>
+  </div>
+</div>
+
+<!-- ===== STATS STRIP ===== -->
+<div class="stats-strip">
+  <div class="stats-strip-in">
+    <div class="stat-item">
+      <div class="num">6</div>
+      <div class="lbl">Expert Doctors</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">6</div>
+      <div class="lbl">Departments</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">20</div>
+      <div class="lbl">Beds Available</div>
+    </div>
+    <div class="stat-item">
+      <div class="num">24x7</div>
+      <div class="lbl">Emergency Care</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== DOCTORS SECTION ===== -->
+<section>
+  <div class="container">
+    <div class="sec-center reveal">
+      <span class="sec-eyebrow">Our Specialists</span>
+      <h2 class="sec-title">Meet the Doctors Behind Kala Amb Hospital</h2>
+      <p class="sec-sub">Every doctor at Kala Amb Hospital is an experienced specialist committed to accurate diagnosis, ethical treatment, and compassionate patient care.</p>
+    </div>
+
+    <div class="doc-full-grid">
+
+      <!-- DR. ASHOK -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DA</div>
+        <div class="doc-full-body">
+          <h2>Dr. Ashok</h2>
+          <div class="qual">MBBS, MD</div>
+          <span class="spec">General Medicine</span>
+          <p>An experienced physician specializing in internal medicine — treating fever, infections, diabetes, hypertension, and other general health conditions with a patient-first approach.</p>
+          <a href="departments.html#general-medicine" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DR. ABHINAV RATHI -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DA</div>
+        <div class="doc-full-body">
+          <h2>Dr. Abhinav Rathi</h2>
+          <div class="qual">MBBS, MS</div>
+          <span class="spec">General Surgeon</span>
+          <p>A skilled surgeon performing routine and emergency surgeries in our modular OT — including hernia, appendix, gallbladder, and piles — with modern, minimally-invasive techniques.</p>
+          <a href="departments.html#general-surgery" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DR. MANISHA -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DM</div>
+        <div class="doc-full-body">
+          <h2>Dr. Manisha</h2>
+          <div class="qual">MBBS, MS</div>
+          <span class="spec">Gynaecologist</span>
+          <p>An experienced gynaecologist providing complete women's health care — pregnancy, delivery, PCOS, menstrual issues, and preventive check-ups — in a confidential and caring environment.</p>
+          <a href="departments.html#gynaecology" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DR. SUNIL -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DS</div>
+        <div class="doc-full-body">
+          <h2>Dr. Sunil</h2>
+          <div class="qual">MBBS, MS</div>
+          <span class="spec">Urologist</span>
+          <p>A specialist in urology — treating kidney stones, urinary infections, prostate issues, and bladder disorders. Uses modern diagnostics and minimally-invasive treatment approaches.</p>
+          <a href="departments.html#urology" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>      <!-- DR. VANEET -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DV</div>
+        <div class="doc-full-body">
+          <h2>Dr. Vaneet</h2>
+          <div class="qual">MBBS, MS</div>
+          <span class="spec">Orthopedics</span>
+          <p>An orthopedic specialist treating fractures, joint pain, sports injuries, and back/neck problems. Committed to helping patients recover mobility and live pain-free.</p>
+          <a href="departments.html#orthopedics" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DR. SUMIT SINGHAL -->
+      <div class="doc-full reveal">
+        <div class="doc-full-avatar">DS</div>
+        <div class="doc-full-body">
+          <h2>Dr. Sumit Singhal</h2>
+          <div class="qual">MBBS, DCH</div>
+          <span class="spec">Pediatrician</span>
+          <p>A child specialist providing pediatric care — vaccinations, newborn care, growth monitoring, and treatment of childhood illnesses — with a warm, child-friendly approach.</p>
+          <a href="departments.html#pediatrics" class="dept-link">View Department →</a>
+          <div class="doc-full-cta">
+            <a href="contact.html" class="btn btn-primary">📅 Book Appointment</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-banner">
+  <h2>Need to Consult a Specialist?</h2>
+  <p>Call us or book an appointment — our team will guide you to the right doctor.</p>
+  <a href="tel:8607599543" class="btn">📞 Call 8607599543</a>
+  <a href="contact.html" class="btn" style="background:rgba(255,255,255,.2);color:white;margin-left:10px">📅 Book Appointment</a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">KALA AMB <span>HOSPITAL</span></div>
+        <p class="foot-desc">Multispeciality hospital serving Sirmour, Nahan, and Kala Amb with expert medical care, modern facilities, and compassionate service — available 24x7.</p>
+        <div class="foot-social">
+          <a href="tel:8607599543" title="Call">📞</a>
+          <a href="https://wa.me/918607599543" title="WhatsApp" target="_blank">💬</a>
+          <a href="#" title="Facebook">📘</a>
+          <a href="#" title="Instagram">📸</a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Departments</h5>
+        <a href="departments.html#general-medicine">General Medicine</a>
+        <a href="departments.html#general-surgery">General Surgery</a>
+        <a href="departments.html#gynaecology">Gynaecology</a>
+        <a href="departments.html#orthopedics">Orthopedics</a>
+        <a href="departments.html#pediatrics">Pediatrics</a>
+        <a href="departments.html#urology">Urology</a>
+      </div>
+      <div class="foot-col">
+        <h5>Quick Links</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="doctors.html">Our Doctors</a>
+        <a href="contact.html">Contact</a>
+        <a href="tel:8607599543">Emergency</a>
+      </div>
+      <div class="foot-col foot-contact">
+        <h5>Contact</h5>
+        <p><span class="ic">📍</span> Vill. Munal Johron, Tirlokpur Road, Kala Amb, Distt. Sirmour, HP - 173030</p>
+        <p><span class="ic">📞</span> <a href="tel:8607599543" style="color:#fff">8607599543</a></p>
+        <p><span class="ic">💬</span> <a href="https://wa.me/918607599543" style="color:#fff">WhatsApp Chat</a></p>
+        <p><span class="ic">🕐</span> Emergency: 24x7</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2026 <strong style="color:#fff">Kala Amb Multispeciality Hospital</strong> — All rights reserved.</div>
+      <div>Website by <a href="https://vaan-consultancy.pages.dev">VAAN Consultancy</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+/* Nav toggle */
+function toggleNav(){
+  document.getElementById('navLinks').classList.toggle('open');
+}
+
+/* Scroll reveal */
+(function(){
+  const targets = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)){
+    targets.forEach(t => t.classList.add('in'));
+    return;
+  }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting){
+        setTimeout(() => e.target.classList.add('in'), i * 60);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  targets.forEach(t => io.observe(t));
+})();
+</script>
+
+</body>
+</html>
+<body>
